@@ -176,4 +176,5 @@
 `関連コマンドやログの詳細は”ZPL II, ZBI 2, Set-Get-Do, Mirror,WML” マニュアルなどを参照すること。`
 
 参考：Zebra Setup Utilities を使用して RFID データ ログを有効にして取得する
+
 https://supportcommunity.zebra.com/s/article/000026343?language=ja
