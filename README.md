@@ -6,19 +6,19 @@
 - リアルタイム性を優先するのであれば^HV
 - エラーを含めた詳細情報取得やまとめての情報取得であればRFIDログ
   
-<br>
-<br>
+</br>
+</br>
 
 -----
 
 ### 1. Host Verification コマンドを活用する
 
    
-    ZPL:^HVコマンドを用いることで、^FN/^RFにアサインされたデータをホストに送信することができる。<br>
+    ZPL:^HVコマンドを用いることで、^FN/^RFにアサインされたデータをホストに送信することができる。</br>
 
 
     ![alt text](image.png)
-    <br>
+    </br>
 
 
     #### ZPL例：Write後のTID、EPCデータを取得
@@ -33,7 +33,7 @@
     ^FH_^HV2,,All EPC Data:[,]_0D_0A^FS
     ^XZ
     ```
-    <br>
+    </br>
 
 
     #### 返信例：
@@ -42,7 +42,7 @@
     8-byte Tag ID Data:[E20034120131F300]
     All EPC Data:[AAAA12345678901234567890]
     ```
-    <br>
+    </br>
 
 
     #### Windows-Java Sample Code例
@@ -111,7 +111,7 @@
     ```
     ! U1 setvar "rfid.log.enabled" "yes"
     ```
-    <br>
+    </br>
 
 
     #### ZPL例：Write後のTID、EPCデータを取得
@@ -124,21 +124,21 @@
     ^RFR,H
     ^XZ
     ```
-    <br>
+    </br>
 
 
     #### コマンド：ログの参照
     ```
     ! U1 getvar "rfid.log.entries"
     ```
-    <br>
+    </br>
 
 
     #### コマンド：ログのクリア
     ```
     ! U1 getvar "rfid.log.entries"
     ```
-    <br>
+    </br>
     
     
     #### 実行例
@@ -166,8 +166,8 @@
     <end>
     "
     ```
-<br>
-<br>
+</br>
+</br>
 
 
 
