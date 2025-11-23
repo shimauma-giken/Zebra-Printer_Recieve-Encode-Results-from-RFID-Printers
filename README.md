@@ -1,9 +1,18 @@
-## Zebra-Printer_Recieve-Encode Results from RFID Printers
-## Zebra RFID プリンタからエンコード結果を取得
+### Zebra-Printer_Recieve-Encode Results from RFID Printers
+## Zebra RFID プリンタからエンコード結果を取得する方法
 
 ^HVを用いる方法とRFIDログを用いる方法がある。それぞれ、長短があるので特性を理解した上で、選択すること。
 
-- リアルタイム性を優先するのであれば^HV
+1. ^HVコマンドの返り値
+    - リアルタイムにログを取得する人向け
+    - 印刷ZPL内に記述する方法
+
+2. プリンタ内のRFIDログを取得
+    - 電源起動後のエンコード結果をまとめて取得する人向け
+    - 不揮発性の情報（電源OFF時にログはすべて消去される）
+    - コマンド結果としての取得、または、USBメモリ
+
+ リアルタイム性を優先するのであれば^HV
 - エラーを含めた詳細情報取得やまとめての情報取得であればRFIDログ
   
 </br>
